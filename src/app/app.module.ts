@@ -4,8 +4,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material/material.module';
-
-
+import {FormsModule, ReactiveFormsModule } from '@angular/forms'; // Import ReactiveFormsModule
 
 @NgModule({
   declarations: [AppComponent],
@@ -13,7 +12,9 @@ import { MaterialModule } from './material/material.module';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MaterialModule
+    MaterialModule,
+    FormsModule,
+    ReactiveFormsModule // Add ReactiveFormsModule to the imports array
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -48,3 +48,24 @@
 </div>
 
 
+
+<!-- button-toggle -->
+<mat-button-toggle-group multiple [(ngModel)]="data">
+  <mat-button-toggle value="bold" >Bold</mat-button-toggle>
+  <mat-button-toggle value="italic">Italic</mat-button-toggle>
+  <mat-button-toggle value="underline">Underline</mat-button-toggle>
+</mat-button-toggle-group>
+
+<h1>{{ data }}</h1>
+
+<!-- Appearance=legacy make it look more light no border lines in the box  a bit larger-->
+<!-- we can mark it as checked disable its ripple -->
+<mat-button-toggle-group multiple [(ngModel)]="data" appearance="legacy">
+  <mat-button-toggle value="bold" checked disableRipple>Bold</mat-button-toggle>
+  <mat-button-toggle value="italic">Italic</mat-button-toggle>
+  <mat-button-toggle value="underline">Underline</mat-button-toggle>
+</mat-button-toggle-group>
+
+
+
+
