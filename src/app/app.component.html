@@ -75,14 +75,22 @@
     <mat-icon [ngStyle]="{ 'color': condition ? 'red' : 'blue', 'font-size': '10em' }" (click)="condition = !condition">grade</mat-icon>
   </div>
   
+
+  <!-- you can set matBadgePosition matBadge matBadgeSize matBadgeOverlap-->
+
   <div style="text-align: center;">
-    <mat-icon style="font-size: 2.2rem;" [matBadge]="amount" matBadgeOverlap="false" matBadgeSize="large">shopping_cart</mat-icon>
+    <mat-icon style="font-size: 2.2rem;" [matBadge]="amount" matBadgeOverlap="false" matBadgeSize="large" >shopping_cart</mat-icon>
   </div>
 
 
-  <button mat-raised-button color="primary" (click)="amount=amount+1">+ Add item</button>
+  <button mat-stroked-button color="primary" (click)="amount=amount+1" >+ Add item</button>
 
 
 <!-- </div> -->
+
+
+
+
+
 
 <div style="margin-bottom: 100px;"></div>
