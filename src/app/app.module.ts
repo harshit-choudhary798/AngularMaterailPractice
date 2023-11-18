@@ -3,9 +3,9 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MaterialModule } from './material/material.module';
 
-// Import MatButtonModule from '@angular/material/button'
-import { MatButtonModule } from '@angular/material/button';
+
 
 @NgModule({
   declarations: [AppComponent],
@@ -13,7 +13,7 @@ import { MatButtonModule } from '@angular/material/button';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MatButtonModule // Corrected import statement
+    MaterialModule
   ],
   providers: [],
   bootstrap: [AppComponent]
