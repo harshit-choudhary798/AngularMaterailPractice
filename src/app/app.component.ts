@@ -9,4 +9,5 @@ export class AppComponent {
   title = 'AngularMaterailPractice';
   data:any=''
   condition:boolean=true
+  amount:number=0
 }

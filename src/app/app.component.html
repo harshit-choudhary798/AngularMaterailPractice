@@ -69,15 +69,18 @@
 
 
 <!-- Icons -->
-<!-- <div style="text-align: center;"> -->
+<!-- <div style="text-align: center;"> we can change its color size  -->
 
   <div>
     <mat-icon [ngStyle]="{ 'color': condition ? 'red' : 'blue', 'font-size': '10em' }" (click)="condition = !condition">grade</mat-icon>
   </div>
   
   <div style="text-align: center;">
-    <mat-icon style="font-size: 4rem; ">shopping_cart</mat-icon>
+    <mat-icon style="font-size: 2.2rem;" [matBadge]="amount" matBadgeOverlap="false" matBadgeSize="large">shopping_cart</mat-icon>
   </div>
+
+
+  <button mat-raised-button color="primary" (click)="amount=amount+1">+ Add item</button>
 
 
 <!-- </div> -->
