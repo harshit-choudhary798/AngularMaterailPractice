@@ -76,6 +76,8 @@
   </div>
   
 
+
+  <!-- Badges -->
   <!-- you can set matBadgePosition matBadge matBadgeSize matBadgeOverlap-->
 
   <div style="text-align: center;">
@@ -88,9 +90,15 @@
 
 <!-- </div> -->
 
+<!-- Progessive Spinner -->
 
+<!-- it provides us with 2 components mat progressive spinner and mat spinner -->
 
+<mat-progress-spinner value="60"></mat-progress-spinner>
 
+<!-- Spinner That doesnt stop -->
+<mat-spinner *ngIf="valid"></mat-spinner>
 
+<button mat-flat-button (click)="valid=!valid" color="primary">Click</button>
 
-<div style="margin-bottom: 100px;"></div>
+<div style="margin-bottom: 2000px;"></div>

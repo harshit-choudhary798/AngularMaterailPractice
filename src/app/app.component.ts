@@ -10,4 +10,5 @@ export class AppComponent {
   data:any=''
   condition:boolean=true
   amount:number=0
+  valid=true
 }
