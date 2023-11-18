@@ -1,13 +1,10 @@
+<!-- Typography -->
 
-
-<!-- TypoGraphy -->
-
-<!-- Typography basically deals with appearance and style of text in the web page -->
+<!-- Typography basically deals with the appearance and style of text on the web page -->
 <div class="mat-display-4">display 4</div>
 <div class="mat-display-3">display 3</div>
 <div class="mat-display-2">display 2</div>
 <div class="mat-display-1">display 1</div>
-
 
 <div class="mat-headline">h1</div>
 <div class="mat-title">h2</div>
@@ -17,25 +14,37 @@
 <!-- We can use this instead -->
 
 <div class="mat-typography">
-<h1>h1</h1>
-<h2>h2</h2>
-<h3>h3</h3>
-<h4>h4</h4>
+  <h1>h1</h1>
+  <h2>h2</h2>
+  <h3>h3</h3>
+  <h4>h4</h4>
 </div>
 
-
 <div class="mat-body-1">Body text</div>
-<div class="mat-body-2">Body tex boldt</div>
+<div class="mat-body-2">Body text bold</div>
 <div class="mat-caption">caption text</div>
-
 
 <!-- Buttons -->
 
-<!-- <button mat-button>Button One</button>
 
-<button mat-raised-button color="primary" [disableRipple]="false">Button One</button>
+<div class="mat-typography" style="text-align: center;">
+  <h1>Buttons in Angular Material</h1>
+
+  <!-- Part 1 types of buttons -->
+  <button mat-button >Button One</button>
+  <button mat-raised-button color="primary" disableRipple>Button Two</button>
+  <button mat-flat-button >Button Three</button>
+  <button mat-stroked-button>Button Four</button>
+
+<!--  disableRipple is used to stop the after clicked animation in the button  -->
 
 
-<button mat-flat-button>Button One</button>
 
-<button mat-stroked-button >Button one</button> -->
+  <!-- Part 2  circular buttons-->
+  <button mat-icon-button color="primary">Icon </button>
+  <button mat-fab color="primary">fab</button>
+  <button mat-mini-fab color="primary">fab mini Button</button>
+
+</div>
+
+
