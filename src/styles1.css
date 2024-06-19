@@ -1,0 +1,21 @@
+  
+  html, body { height: 100%; }
+
+  /* mat-tab-group {
+    &.mat-tab-group.mat-primary .mat-ink-bar {
+      background-color: red;
+     }
+    &.mat-tab-group.mat-primary.my-tab-class .mat-ink-bar {
+      background-color: green;
+    }
+  } */
+
+
+  .mat-tab-group.mat-primary .mat-ink-bar {
+    background-color: red;
+  }
+  
+  .mat-tab-group.mat-primary.my-tab-class .mat-ink-bar {
+    background-color: green;
+  }
+  

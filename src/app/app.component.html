@@ -31,12 +31,12 @@
   <h1>Buttons in Angular Material</h1>
 
   <!-- Part 1 types of buttons -->
-  <button mat-button >Button One</button>
+  <button mat-button>Button One</button>
   <button mat-raised-button color="primary" disableRipple>Button Two</button>
-  <button mat-flat-button >Button Three</button>
+  <button mat-flat-button>Button Three</button>
   <button mat-stroked-button>Button Four</button>
 
-<!--  disableRipple is used to stop the after clicked animation in the button  -->
+  <!--  disableRipple is used to stop the after clicked animation in the button  -->
 
 
 
@@ -51,7 +51,7 @@
 
 <!-- button-toggle -->
 <mat-button-toggle-group multiple [(ngModel)]="data">
-  <mat-button-toggle value="bold" >Bold</mat-button-toggle>
+  <mat-button-toggle value="bold">Bold</mat-button-toggle>
   <mat-button-toggle value="italic">Italic</mat-button-toggle>
   <mat-button-toggle value="underline">Underline</mat-button-toggle>
 </mat-button-toggle-group>
@@ -71,21 +71,23 @@
 <!-- Icons -->
 <!-- <div style="text-align: center;"> we can change its color size  -->
 
-  <div>
-    <mat-icon [ngStyle]="{ 'color': condition ? 'red' : 'blue', 'font-size': '10em' }" (click)="condition = !condition">grade</mat-icon>
-  </div>
-  
+<div>
+  <mat-icon [ngStyle]="{ 'color': condition ? 'red' : 'blue', 'font-size': '10em' }"
+    (click)="condition = !condition">grade</mat-icon>
+</div>
 
 
-  <!-- Badges -->
-  <!-- you can set matBadgePosition matBadge matBadgeSize matBadgeOverlap-->
 
-  <div style="text-align: center;">
-    <mat-icon style="font-size: 2.2rem;" [matBadge]="amount" matBadgeOverlap="false" matBadgeSize="large" >shopping_cart</mat-icon>
-  </div>
+<!-- Badges -->
+<!-- you can set matBadgePosition matBadge matBadgeSize matBadgeOverlap-->
+
+<div style="text-align: center;">
+  <mat-icon style="font-size: 2.2rem;" [matBadge]="amount" matBadgeOverlap="false"
+    matBadgeSize="large">shopping_cart</mat-icon>
+</div>
 
 
-  <button mat-stroked-button color="primary" (click)="amount=amount+1" >+ Add item</button>
+<button mat-stroked-button color="primary" (click)="amount=amount+1">+ Add item</button>
 
 
 <!-- </div> -->
@@ -97,8 +99,64 @@
 <mat-progress-spinner value="60"></mat-progress-spinner>
 
 <!-- Spinner That doesnt stop -->
-<mat-spinner *ngIf="valid"></mat-spinner>
+<mat-spinner *ngIf="valid" style="background-color: black; border-radius: 50%;">
+
+</mat-spinner>
 
 <button mat-flat-button (click)="valid=!valid" color="primary">Click</button>
 
+
+
+
+
+
+<!-- NavBar -->
+
+<!-- Lets start with navigation component tool bar MatToolbarModule -->
+<mat-toolbar color="primary" class="flex-container">
+  <div class="flex-item">
+    <div>
+      <h1>Harshit E commerce</h1>
+    </div>
+  </div>
+  <div class="flex-item">
+    <span class="nav-item">Home</span>
+    <span class="nav-item">About</span>
+    <span class="nav-item">
+      <mat-icon matBadge="0">shopping_cart</mat-icon>
+    </span>
+  </div>
+</mat-toolbar>
+
+
+<!-- SideNav  -->
+
+<mat-sidenav-container color="primary">
+  <mat-sidenav-content>hello world</mat-sidenav-content>
+  <mat-sidenav-content>hello world</mat-sidenav-content>
+  <mat-sidenav-content>hello world</mat-sidenav-content>
+  <mat-sidenav-content>hello world</mat-sidenav-content>
+  <mat-sidenav-content>hello world</mat-sidenav-content>
+  <mat-sidenav-content>hello world</mat-sidenav-content>
+
+</mat-sidenav-container>
+
+
+
+
+
+
+<!-- Here is the mat-tab with override without ::ng-deep -->
+
+
+<mat-tab-group class="my-tab-class">
+  <mat-tab class="tabs1" label="First"> Content 11 </mat-tab>
+  <mat-tab class="tabs1" label="Second"> Content 2 </mat-tab>
+  <mat-tab class="tabs1" label="Third"> Content 3 </mat-tab>
+</mat-tab-group>
+<mat-tab-group>
+  <mat-tab class="tabs1" label="First"> Content 11 </mat-tab>
+  <mat-tab class="tabs1" label="Second"> Content 2 </mat-tab>
+  <mat-tab class="tabs1" label="Third"> Content 3 </mat-tab>
+</mat-tab-group>
 <div style="margin-bottom: 2000px;"></div>
